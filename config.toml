@@ -1,9 +1,12 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://107.174.218.212:15080'
 languageCode = 'en-us'
 title = 'Run Fast'
 theme = 'whiteplain'
 
-
+[params]
+  toc = true
+	
+	
 [taxonomies]
   category = "categories"
   tag = "tags"

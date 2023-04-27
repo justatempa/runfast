@@ -3,6 +3,7 @@ title: "Hello Hugo"
 date: 2023-04-27T17:26:28+08:00
 draft: true
 tags: ["教程", "开发"]
+toc: true
 ---
 
 
@@ -15,7 +16,7 @@ hello hugo
 
 # 启动
 
-
+hugo.exe server -buildDrafts
 
 # 页面
 
@@ -58,6 +59,10 @@ tags: ["教程", "开发"]
 
 ## 页内标题
 
+400字以上会自动添加toc
 
+通过toc:true可强制开启
+
+目前这个目录不能悬浮显示。无所谓了
 
 # about
