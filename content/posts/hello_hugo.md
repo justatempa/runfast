@@ -31,6 +31,23 @@ tags: ["教程", "开发"]
 
 ## 代码高亮
 
+```java
+    /**
+     * 驼峰转下划线
+     * @param str
+     * @return
+     */
+    public static String humpToLine(String str) {
+        Matcher matcher = humpPattern.matcher(str);
+        StringBuffer sb = new StringBuffer();
+        while (matcher.find()) {
+            matcher.appendReplacement(sb, "_" + matcher.group(0).toUpperCase());
+        }
+        matcher.appendTail(sb);
+        return sb.toString().toUpperCase();
+    }
+```
+
 
 
 ## 图片
